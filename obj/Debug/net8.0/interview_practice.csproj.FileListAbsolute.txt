@@ -1,0 +1,15 @@
+c:\Repos\interview_practice\bin\Debug\net8.0\interview_practice.exe
+c:\Repos\interview_practice\bin\Debug\net8.0\interview_practice.deps.json
+c:\Repos\interview_practice\bin\Debug\net8.0\interview_practice.runtimeconfig.json
+c:\Repos\interview_practice\bin\Debug\net8.0\interview_practice.dll
+c:\Repos\interview_practice\bin\Debug\net8.0\interview_practice.pdb
+c:\Repos\interview_practice\obj\Debug\net8.0\interview_practice.GeneratedMSBuildEditorConfig.editorconfig
+c:\Repos\interview_practice\obj\Debug\net8.0\interview_practice.AssemblyInfoInputs.cache
+c:\Repos\interview_practice\obj\Debug\net8.0\interview_practice.AssemblyInfo.cs
+c:\Repos\interview_practice\obj\Debug\net8.0\interview_practice.csproj.CoreCompileInputs.cache
+c:\Repos\interview_practice\obj\Debug\net8.0\interview_practice.sourcelink.json
+c:\Repos\interview_practice\obj\Debug\net8.0\interview_practice.dll
+c:\Repos\interview_practice\obj\Debug\net8.0\refint\interview_practice.dll
+c:\Repos\interview_practice\obj\Debug\net8.0\interview_practice.pdb
+c:\Repos\interview_practice\obj\Debug\net8.0\interview_practice.genruntimeconfig.cache
+c:\Repos\interview_practice\obj\Debug\net8.0\ref\interview_practice.dll
