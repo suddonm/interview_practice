@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Repos\\interview_practice\\interview_practice.csproj": {}
+    "C:\\Repos\\interview_practice\\interview_practice.csproj": {}
   },
   "projects": {
-    "c:\\Repos\\interview_practice\\interview_practice.csproj": {
+    "C:\\Repos\\interview_practice\\interview_practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Repos\\interview_practice\\interview_practice.csproj",
+        "projectUniqueName": "C:\\Repos\\interview_practice\\interview_practice.csproj",
         "projectName": "interview_practice",
-        "projectPath": "c:\\Repos\\interview_practice\\interview_practice.csproj",
+        "projectPath": "C:\\Repos\\interview_practice\\interview_practice.csproj",
         "packagesPath": "C:\\Users\\msudd\\.nuget\\packages\\",
-        "outputPath": "c:\\Repos\\interview_practice\\obj\\",
+        "outputPath": "C:\\Repos\\interview_practice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\msudd\\AppData\\Roaming\\NuGet\\NuGet.Config"
