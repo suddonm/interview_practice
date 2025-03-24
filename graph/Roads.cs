@@ -1,3 +1,5 @@
+using System.Reflection.Metadata.Ecma335;
+
 public class Roads
 {
     public List<RoadNode> RoadNetwork;
@@ -69,20 +71,41 @@ public class Roads
         return path;
     }
 
-    public List<List<RoadNode>> FindAllPaths(RoadNode s, RoadNode d)
+    public void PrintAllPaths(RoadNode s, RoadNode d)
     {
-        List<List<RoadNode>> paths = new List<List<RoadNode>>();
-        List<RoadNode> visited = new List<RoadNode>();
-        List<RoadNode> path = new List<RoadNode>();
+        foreach (var l in FindAllPaths(s, d, new List<RoadNode>()))
+        {
+            foreach (var n in l)
+            {
+                Console.Write(n.value + " ");                
+            }
 
+            Console.WriteLine();
+        }
+    }
+
+    public List<List<RoadNode>> FindAllPaths(RoadNode s, RoadNode d, List<RoadNode> visited)
+    {
+        if (s == null)
+        {
+            return null;
+        }
+
+        List<List<RoadNode>> paths = new List<List<RoadNode>>();
+
+        if (s == d)
+        {
+            paths.Add(new List<RoadNode>() { s });
+            return paths;   
+        }        
+                
         Queue<RoadNode> qNext = new Queue<RoadNode>();
         qNext.Enqueue(s);
-        int level = 0;
 
         while (qNext.Count > 0)
         {
             RoadNode tmp = qNext.Dequeue();
-            path.Add(tmp);
+
             foreach(var n in tmp.Neighbors)
             {
                 if (!visited.Contains(n.Key))
@@ -90,11 +113,38 @@ public class Roads
                     qNext.Enqueue(n.Key);
                     visited.Add(n.Key);
                 }
-            }
 
-            level++;
+                paths.Concat(FindAllPaths(n.Key, d, visited));
+            }
         }
 
         return paths;
+    }
+
+    public List<RoadNode> FindPath(RoadNode s, RoadNode d, List<RoadNode> visited)
+    {
+        if (s == null)
+        {
+            return null;
+        }
+
+        if (s == d)
+        {
+            return new List<RoadNode>() { s };
+        }
+
+        List<RoadNode> l = new List<RoadNode> { s };
+
+        foreach (var n in s.Neighbors)
+        {
+            visited.Add(s);
+            List<RoadNode> temp = FindPath(n.Key, d, visited);
+            if (temp != null)
+            {
+                l.Concat(temp);
+            }
+        }
+
+        return l;
     }
 }

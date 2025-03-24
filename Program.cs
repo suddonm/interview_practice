@@ -15,5 +15,6 @@
 
         roadNetwork.BuildNetwork(n, roads);
         roadNetwork.PrintNetwork();
+        //roadNetwork.PrintAllPaths(0, 5);
     }
 }
