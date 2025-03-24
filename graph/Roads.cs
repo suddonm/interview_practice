@@ -21,6 +21,11 @@ public class Roads
         RoadNetwork = new List<RoadNode>();
     }
 
+    public RoadNode GetNode(int id)
+    {
+        return RoadNetwork[id];
+    }
+
     public void BuildNetwork(int n, int[][] roads)
     {
         for (int i = 0; i < n; i++)
